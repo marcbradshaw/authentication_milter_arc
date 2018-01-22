@@ -216,7 +216,7 @@ sub eom_callback {
         }
 
         if ( @items ) {
-            my $header_comment = Mail::AuthenticationResults::header::Comment->new();
+            my $header_comment = Mail::AuthenticationResults::Header::Comment->new();
             my $header_comment_text = join( ', ', @items );
             # Try set_value first (required for potential nested comment), if this fails then
             # set using safe_set_value
